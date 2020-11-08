@@ -1,0 +1,5 @@
+ModuleName[Name Input2]
+ModuleIcon[sword]
+Page
+Text[Write your name]
+Input[name]
