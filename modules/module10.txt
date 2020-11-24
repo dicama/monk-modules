@@ -1,5 +1,5 @@
-ModuleName[Name Input2]
+ModuleName[AppStoreTest1]
 ModuleIcon[sword]
 Page
-Text[Write your name]
+Text[text=Write your name]
 Input[name]
