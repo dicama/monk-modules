@@ -1,3 +1,4 @@
+ModuleId[AppStoreTest1]
 ModuleName[AppStoreTest1]
 ModuleIcon[sword]
 Page
