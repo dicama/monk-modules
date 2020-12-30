@@ -1,7 +1,7 @@
 ModuleId[AppStoreTest2]
-ModuleName[airplanemodeOn]
+ModuleName[AppStoreTest2]
 ModuleInfo[Dies ist ein Testmodul für die Entwicklung. Es hat keine Vorteile]
-ModuleIcon[sword]
+ModuleIcon[airplanemodeOn]
 Page
 Text[text=Write your name]
 Input[name]
