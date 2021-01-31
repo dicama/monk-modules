@@ -1,5 +1,7 @@
 ModuleId[AppStoreTest2]
 ModuleName[AppStoreTest2]
+ModuleInfo[Dies ist ein Testmodul für die Entwicklung. Es hat keine Vorteile]
+ModuleIcon[airplane]
 ModuleAddresses[name]
 ModuleIcon[sword]
 Page

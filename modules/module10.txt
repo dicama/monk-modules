@@ -1,5 +1,6 @@
 ModuleId[AppStoreTest1]
 ModuleName[AppStoreTest1]
+ModuleInfo[Dies ist ein weiteres Testmodul für die Entwicklung. Es überzeugt durch seine Einfachheit.]
 ModuleAddresses[name]
 ModuleIcon[sword]
 Page
