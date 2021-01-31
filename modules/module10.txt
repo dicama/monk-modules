@@ -1,5 +1,6 @@
 ModuleId[AppStoreTest1]
 ModuleName[AppStoreTest1]
+ModuleAddresses[name]
 ModuleIcon[sword]
 Page
 Text[text=Write your name]

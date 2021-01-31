@@ -1,5 +1,8 @@
 ModuleId[Stuhltracker]
 ModuleName[Stuhltracker]
+ModuleVersion[0.0.1]
+ModuleAddresses[address=poopseries;label=Stuhlgang-Daten;description=An dieser Stelle werden deine Stuhlgangs-Daten erfasst.]
+ModuleIcon[toilet]
 ModuleInfo[Das Stuhltracker Modul hilft Dir dabei deinen Stuhl zu tracken es sollte für Dich damit kein Problem sein deinen Stuhl im Blick zu halten.]
 ModuleFABAction[Neuer Eintrag]
 TimeSeries[address=poopseries]{date,consistency,pain,color,poop}
@@ -10,9 +13,9 @@ HandleAction[on=action;key=poopseries;action=Neuer Eintrag:mode=edit]
 HandleAction[on=action;key=FAB;action=Neuer Eintrag:mode=create]
 
 DashboardWidget
-ChartSpark[domain=week;datasrc=poopseries.date,poopseries.color;height=100]
+StackedChartSpark[domain=week;datasrc=poopseries.date,poopseries.color;height=100]
 
-Modal[title=Neuer Eintrag;data=poopseries:element;modes=create,edit;edit_data=poopseries:select]
+Modal[title=Neuer Eintrag;data=poopseries:element;modes=create,edit;edit_data=poopseries:select;trigger_last_entry=true]
 Text[text=Zeitpunkt]{text=h6}
 DateTime[data=.date]
 Text[text=Hast Du Stuhl abgesetzt?]{text=h6}
@@ -23,24 +26,25 @@ Text[text=Welche Farbe hatte der Stuhl?]{text=h6}
 ColorPicker[data=.color]
 Text[text=Wie ist die Konsistenz?]{text=h6}
 SelectTile[data=.consistency;dataparent=poopseries;defaultvalue=N/A;choices=Einzelne, feste Kügelchen#Wurstförmig, aber klumpig#Wurstförmig, mit rissiger Oberfläche#Wurstförmig mit glatter Oberfläche#Einzelne, weiche Klümpchen#Sehr weiche, breiige Klümpchen#Flüssig, ohne feste Bestandteile]
-ChipInput[style=tests]
+Text[text=Wähle Assoziationen]{text=h6}
+ChipInput[dataparent=poopseries;data=.tags;defaultvalue=emptydefault]
 Button[label=Speichern;action=saveandclose]
 Button[label=Löschen;action=deleteandclose;mode=edit]
 
 Tab[Tag]
-ChartSpark[domain=day;datasrc=poopseries.date,poopseries.color;height=200;accumulate=add]
+StackedChartSpark[domain=day;datasrc=poopseries.date,poopseries.color;height=200;accumulate=add]
 TimeSeriesStatistics[timespan=day;datasrc=poopseries;accumulate=count;middlestring=x Stuhl]
-TimeSeriesList[datasrc=poopseries;items=.date,.pain,.value;title=.consistency;timespan=day;icon=.consistency;expanded=true]
+TimeSeriesList[datasrc=poopseries;items=.date,.pain,.value,.tags;title=.consistency;timespan=day;icon=.consistency;expanded=true]
 
 Tab[Woche]
-ChartSpark[domain=week;datasrc=poopseries.date,poopseries.color;height=200;accumulate=add]
+StackedChartSpark[domain=week;datasrc=poopseries.date,poopseries.color;height=200;accumulate=add]
 TimeSeriesStatistics[timespan=week;datasrc=poopseries;accumulate=count;middlestring=x Stuhl]
-TimeSeriesList[datasrc=poopseries;items=.date,.pain,.value;title=.consistency;timespan=week;icon=.consistency]
+TimeSeriesList[datasrc=poopseries;items=.date,.pain,.value,.tags;title=.consistency;timespan=week;icon=.consistency]
 
 Tab[Monat]
-ChartSpark[domain=month;datasrc=poopseries.date,poopseries.color;height=200;accumulate=add]
+StackedChartSpark[domain=month;datasrc=poopseries.date,poopseries.color;height=200;accumulate=add]
 TimeSeriesStatistics[timespan=month;datasrc=poopseries;accumulate=count;middlestring=x Stuhl]
-TimeSeriesList[datasrc=poopseries;items=.date,.pain,.value;title=.consistency;timespan=month;icon=.consistency]
+TimeSeriesList[datasrc=poopseries;items=.date,.pain,.value,.tags;title=.consistency;timespan=month;icon=.consistency]
 
 
 PDFReport
