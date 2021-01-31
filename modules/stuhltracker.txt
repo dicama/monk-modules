@@ -1,7 +1,7 @@
 ModuleId[Stuhltracker]
 ModuleName[Stuhltracker]
 ModuleVersion[0.0.2]
-ModuleAddresses[address=poopseries;label=Stuhlgang-Daten;description=An dieser Stelle werden deine Stuhlgangs-Daten erfasst.]
+ModuleAddresses[address=stuhlgang_series;label=Stuhlgang-Daten;description=An dieser Stelle werden deine Stuhlgangs-Daten erfasst.]
 ModuleIcon[toilet]
 ModuleInfo[Das Stuhltracker Modul hilft Dir dabei deinen Stuhl zu tracken es sollte für Dich damit kein Problem sein deinen Stuhl im Blick zu halten.]
 ModuleFABAction[Neuer Eintrag]
