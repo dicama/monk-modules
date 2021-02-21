@@ -1,6 +1,6 @@
 # monk-modules
 
-Create your own modules for the MONK App with the MONK script:
+Create your own modules for the MONK App with the MONK script. :smiley: Its fun!
 
 Here is a simple example:
 
@@ -34,8 +34,9 @@ The icon name can be chosen from https://materialdesignicons.com/. Please use th
 
 After these basic properties of the module have been defined. We can create the UI elements. In this case a simple web-site is shown. Since we are using no tabs, but rather a single page view, we are using
 ```
-Page
+Page[base=column]
 ```
+Here we set the paramter `base=column`. This is needed if we want to embed a single WebView element. If we would like to embed multiple UI elements, we would rather use `base=list` but this is not the case here. :-)
 
 On this page we want to show the website. So we use:
 
@@ -43,5 +44,5 @@ On this page we want to show the website. So we use:
 WebView[https://www.krebshilfe.de/informieren/ueber-krebs/haeufige-krebsarten/darmkrebs/]
 ```
 
-Done. Building a simple module for MONK is super easy!
+Done. Building a simple module for MONK is super easy :star_struck:!
 
