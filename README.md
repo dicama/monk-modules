@@ -1,8 +1,12 @@
 # monk-modules
+#### Create your own modules for the MONK App with the MONK script. :smiley: Its fun!
 
-Create your own modules for the MONK App with the MONK script. :smiley: Its fun!
+> Check our <a href="https://github.com/dicama/monk-modules/blob/main/CONTRIBUTING.MD">Contribution Guidelines</a> to get you started :rocket:
+> 
 
 Here is a simple example:
+
+## Example: Create Your Own Module (The Webviewer)
 
 ```
 ModuleId[Module3]
@@ -46,3 +50,14 @@ WebView[https://www.krebshilfe.de/informieren/ueber-krebs/haeufige-krebsarten/da
 
 Done. Building a simple module for MONK is super easy :star_struck:!
 
+### Acknowledgment
+
+We gratefully acknowledge strong support by the Open Knowledge Foundation Germany e.V., Prototype Fund, German Federal Ministry of Research and Education, Health Hackers e.V. as well as everyone who is contributing to this project by providing feedback, ideas and further visionary thoughts.
+
+<p class="aligncenter">
+       <img align="middle" src="https://github.com/dicama/dicama/blob/dicama-imgs-1/acknowledgments.svg" width="800">
+ </p>
+   
+### License
+All work provided is published under the terms of the MIT Licence Agreement.
+See <a href="https://github.com/dicama/monk-modules/blob/main/LICENSE">DiCaMa Licence Agreement</a> for more information.
