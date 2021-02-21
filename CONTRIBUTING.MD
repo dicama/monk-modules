@@ -104,8 +104,23 @@ and potential co-creation developments.
 - Replace all graphical assets attached to MONK with your own (Splashscreens, Heroimages etc.)
 - Replace direct textual or legal content (i.e. data privacy statements) 
 - Exclude the MONK Modulestore from your App
-o if you plan to use MONK Modules, please get in touch with us to discuss incopoeration of specific modules and dependencies. Please note, that we would also have to inform 
-3rd party module providers about a potential incoperation.
+
+> Note: If you plan to use MONK Modules, please get in touch with us to discuss incopoeration of specific modules and dependencies. Please note, that we would also have to inform 3rd party module providers about a potential incoperation.
+> 
+
+## Submitting a "good" bug report?
+
+Bugs in MONK are tracked as Issues within <a href="https://github.com/dicama/monk-app/issues">MONK-App Issue Tracker</a>/<a href="https://github.com/dicama/monk-modules/issues">MONK-Modules Issue Tracker</a>.  
+
+By filing an issue please always try to describe the problem in all details possibile for you. The following template strucutre may help you and 
+our dev team to reproduce and solve the corresponding issues. 
+
+* **Use a clear, comprehensive and descriptive title** for the problems addressed.
+* **Describe the exact steps leading to the issue** - despite mentioning the workflow about 'What you did' also mention the 'How'. I.e. navigating with gestures, button clicks, inputs you provided
+* **Describe the resulting behavior of the app** 
+* **Explain which behavior you expected to see**
+* **Include attachments like screenshots or videos if possible** 
+* **Include details about your mobile device** like OS version, screensize
 
 
-
+And now we are looking forward to your contributions!
